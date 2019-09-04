@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         // declare variables
-        String employeeNum;
+        int employeeNum;
         double hrWorked;
         double payRate;
         double wklyPay;
@@ -17,7 +17,8 @@ public class Main {
         // get values
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter the employee number: ");
-        employeeNum = keyboard.nextLine(); // nextLine will read to the end of the line
+        employeeNum = keyboard.nextInt(); // nextLine will read to the end of the line
+        keyboard.nextLine();
         System.out.println("Enter the pay rate: ");
         payRate = keyboard.nextDouble();
         System.out.println("Enter the number of hours worked in the week: ");
@@ -34,6 +35,7 @@ public class Main {
             if(hrWorked <= basePayHr){
                 wklyPay = hrWorked * payRate;
             } else
+                System.out.println("You worked overtime.");
                 wklyPay = basePayHr * payRate + (hrWorked-basePayHr)*(payRate*1.5);
             System.out.println("The weekly pay for recorded hours of " + hrWorked + " is $" + wklyPay);
         } else
