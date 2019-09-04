@@ -1,4 +1,4 @@
-Pseudocode - Calculate employee's pay
+# Pseudocode - Calculate employee's pay
 
 <pre>
 Module Main
