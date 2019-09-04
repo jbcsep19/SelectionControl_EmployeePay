@@ -1,4 +1,6 @@
+Pseudocode
 2) Calculate employee's pay
+<pre>
 Module Main
 	// declare variables
 	Declare Integer employeeNum
@@ -34,3 +36,4 @@ Module Main
 	Display "The pay rate is ", payRate
 	Display "The number of hours worked in a week is ", hrWorked
 End Main
+</pre>
