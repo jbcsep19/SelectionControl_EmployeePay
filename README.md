@@ -1,5 +1,5 @@
 Pseudocode
-2) Calculate employee's pay
+1) Calculate employee's pay
 <pre>
 Module Main
 	// declare variables
